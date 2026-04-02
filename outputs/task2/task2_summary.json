@@ -1,0 +1,8 @@
+{
+  "task": "Task2",
+  "model": "Task2_2DCNN_random_5frames",
+  "accuracy": 0.714987714987715,
+  "macro_f1": 0.7157668171520001,
+  "avg_sec_per_video": 0.07152905393876959,
+  "best_n_frames_by_val": 5
+}

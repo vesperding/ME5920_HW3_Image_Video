@@ -1,0 +1,12 @@
+{
+  "task": "Task4",
+  "model": "Task4_ResNet18_BiLSTM_Attn_partial_seq12_3seq_3rep",
+  "accuracy": 0.7469287469287469,
+  "macro_f1": 0.7372188131152277,
+  "avg_sec_per_video": 0.37239676377111336,
+  "best_num_sequences_by_val": 3,
+  "selection_num_repeats": 3,
+  "encoder_tune_mode": "partial",
+  "seq_len": 12,
+  "base_stride": 2
+}

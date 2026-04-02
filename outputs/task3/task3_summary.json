@@ -1,0 +1,8 @@
+{
+  "task": "Task3",
+  "model": "Task3_3DCNN_3crop",
+  "accuracy": 0.9582309582309583,
+  "macro_f1": 0.9577299136217683,
+  "avg_sec_per_video": 0.17691181742881382,
+  "best_num_temporal_crops_by_val": 3
+}

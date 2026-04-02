@@ -1,0 +1,4 @@
+task,model,accuracy,macro_f1,avg_sec_per_video,best_n_frames_by_val,best_num_temporal_crops_by_val,best_num_sequences_by_val,selection_num_repeats,encoder_tune_mode,seq_len,base_stride
+Task2,Task2_2DCNN_random_5frames,0.714987714987715,0.7157668171520001,0.07152905393876959,5.0,,,,,,
+Task3,Task3_3DCNN_3crop,0.9582309582309583,0.9577299136217683,0.17691181742881382,,3.0,,,,,
+Task4,Task4_ResNet18_BiLSTM_Attn_partial_seq12_3seq_3rep,0.7469287469287469,0.7372188131152277,0.37239676377111336,,,3.0,3.0,partial,12.0,2.0

@@ -1,0 +1,13 @@
+{
+  "basketball": 0,
+  "biking": 1,
+  "diving": 2,
+  "golf_swing": 3,
+  "horse_riding": 4,
+  "soccer_juggling": 5,
+  "swing": 6,
+  "tennis_swing": 7,
+  "trampoline_jumping": 8,
+  "volleyball_spiking": 9,
+  "walking": 10
+}
