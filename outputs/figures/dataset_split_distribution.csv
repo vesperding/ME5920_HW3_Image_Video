@@ -1,0 +1,12 @@
+class_name,train,val,test
+basketball,82,17,42
+biking,86,16,43
+diving,107,12,37
+golf_swing,81,20,41
+horse_riding,119,21,58
+soccer_juggling,94,23,39
+swing,94,12,31
+tennis_swing,112,19,36
+trampoline_jumping,78,14,27
+volleyball_spiking,80,12,24
+walking,80,14,29
