@@ -1,51 +1,80 @@
 # ME5920 HW3: Image and Video Classification (UCF11)
 
-This repository contains the implementation and analysis for Homework 3 of ME5920, focusing on video classification using the UCF11 dataset.
+This repository contains the implementation and results for Homework 3 (ME5920), focusing on video classification on the UCF11 dataset.
 
 ---
 
-## Project Structure
+## Repository Structure
 
 - `hw3_ucf11_pipeline.py`  
-  Main training and evaluation pipeline for all tasks.
-
-- `posthoc_visualization.py`  
-  Script for generating all post-hoc visualizations from saved outputs.
+  Main script for training, evaluation, and result generation for all tasks.
 
 - `outputs/`  
-  Contains all experiment results, including:
-  - CSV logs
-  - Performance metrics
-  - Visualization figures
+  All experiment outputs, including:
+  - performance metrics (CSV)
+  - confusion matrices
+  - training curves
+  - comparison plots
+
+- `outputs/figures/`  
+  Consolidated visualization results used for analysis and presentation.
 
 - `splits/`  
-  Dataset splits (train / val / test)
+  Train / validation / test splits based on video folders.
 
 - `HW3_ME5920.ipynb`  
-  Colab notebook containing full experimental workflow and execution
+  Colab notebook with full experimental workflow.
 
 ---
 
-## Tasks Overview
+## Tasks
 
-### Task 1: Dataset Split Visualization
-- Visualizes class distribution across train, validation, and test sets
+### Task 1: Dataset Split
+Videos are split by folder index:
+- Test: folders 20–25  
+- Validation: folders 17–19  
+- Training: remaining folders  
 
-### Task 2: Frame Sampling Strategy (2D CNN)
-- Varies number of sampled frames
-- Studies trade-off between performance and efficiency
+A visualization of class distribution is provided in `outputs/figures/`.
+
+---
+
+### Task 2: Frame Sampling (2D CNN)
+- Randomly sample N frames per video  
+- Study how N affects accuracy, F1, and inference time  
+
+---
 
 ### Task 3: Temporal Crops (3D CNN)
-- Uses multiple temporal crops
-- Improves temporal modeling
-
-### Task 4: Sequence Modeling (RNN / LSTM)
-- Uses sequence-based representation
-- Explores number of sequences and repetition strategies
+- Apply multiple temporal crops per video  
+- Improve temporal coverage and robustness  
 
 ---
 
-## Key Visualizations
+### Task 4: Sequence Modeling (RNN / LSTM)
+- Represent each video as a sequence of features  
+- Evaluate number of sequences and repetition strategies  
 
-All figures are stored in:
+---
 
+## Results and Visualizations
+
+All final results are saved under: outputs/
+
+Key figures include:
+
+- Accuracy / Macro-F1 vs frames, crops, sequences  
+- Inference time comparison  
+- Per-class F1 scores  
+- Confusion matrices  
+- Prediction examples (correct vs incorrect)  
+- Dataset split distribution  
+
+---
+
+## Reproducibility
+
+To regenerate visualizations from saved outputs:
+
+```bash
+python posthoc_visualization.py
